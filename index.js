@@ -1,6 +1,9 @@
-function takeANumber(currLine, name) {
-  currLine.push(name);
-  return `Welcome, ${name}. You are number ${currLine.length} in line.`;
+var counter = 0;
+
+function takeANumber(currLine) {
+  counter++;
+  currLine.push(counter);
+  return `Welcome, You are ticket number ${counter}.`;
 }
 
 function nowServing(currLine) {
